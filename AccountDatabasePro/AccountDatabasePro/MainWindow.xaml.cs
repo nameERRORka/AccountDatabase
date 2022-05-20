@@ -24,5 +24,22 @@ namespace AccountDatabasePro
         {
             InitializeComponent();
         }
+
+        private void _b_exit_Click(object sender, RoutedEventArgs e)
+        {
+            ExitWindow _f_exitWindow = new ExitWindow();
+            _f_exitWindow.Show();
+
+        }
+
+        private void Rectangle_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+
+        private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }

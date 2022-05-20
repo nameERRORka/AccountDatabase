@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AccountDatabasePro"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="549" Width="1061" Background="Transparent" AllowsTransparency="True"
+         WindowStyle="None" WindowStartupLocation="CenterScreen">
+
+    <Border CornerRadius="0,30,30,30" BorderBrush="White" BorderThickness="0" Background="#FFA7A7A7" Margin="10,10,10,10" >
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="0" BlurRadius="10"/>
+        </Border.Effect>
+        <Grid>
+            <Button x:Name="_b_exit" Content="X" HorizontalAlignment="Left" Margin="958,1,0,0" VerticalAlignment="Top" Height="42" Width="42" Background="#FFA7A7A7" BorderBrush="#00707070" FontFamily="Bahnschrift SemiLight Condensed" FontSize="24" Foreground="White" FontStretch="ExtraExpanded" Click="_b_exit_Click"/>
+            <Rectangle HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="953" Fill="#FFE8E8E8" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown"/>
+            <Label Content="Account Database | PRO" HorizontalAlignment="Left" Margin="58,4,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontSize="24" MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
+
+        </Grid>
+    </Border>
 </Window>
