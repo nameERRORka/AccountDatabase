@@ -8,15 +8,38 @@
         Title="MainWindow" Height="549" Width="1061" Background="Transparent" AllowsTransparency="True"
          WindowStyle="None" WindowStartupLocation="CenterScreen">
 
-    <Border CornerRadius="0,30,30,30" BorderBrush="White" BorderThickness="0" Background="#FFA7A7A7" Margin="10,10,10,10" >
+    <Border CornerRadius="0,0,30,30" BorderBrush="White" BorderThickness="0" Background="#FFA7A7A7" Margin="10,10,10,10" >
+
         <Border.Effect>
             <DropShadowEffect ShadowDepth="0" BlurRadius="10"/>
         </Border.Effect>
         <Grid>
-            <Button x:Name="_b_exit" Content="X" HorizontalAlignment="Left" Margin="958,1,0,0" VerticalAlignment="Top" Height="42" Width="42" Background="#FFA7A7A7" BorderBrush="#00707070" FontFamily="Bahnschrift SemiLight Condensed" FontSize="24" Foreground="White" FontStretch="ExtraExpanded" Click="_b_exit_Click"/>
+            <Button x:Name="_b_exit" Content="X" HorizontalAlignment="Left" Margin="953,1,0,0" VerticalAlignment="Top" Height="43" Width="88" Background="#FFA7A7A7" BorderBrush="#00707070" FontFamily="Bahnschrift SemiLight Condensed" FontSize="24" Foreground="White" FontStretch="ExtraExpanded" Click="_b_exit_Click">
+            </Button>
+
+            <Border CornerRadius="0,0,0,30" BorderBrush="White" BorderThickness="0" Background="#FF6D6D6D" Margin="0,0,791,0" >
+                <Label Content="Project made by" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,505,0,0" FontFamily="Bahnschrift SemiLight Condensed" Foreground="#FFA7A7A7"/>
+
+            </Border>
+
             <Rectangle HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="953" Fill="#FFE8E8E8" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown"/>
-            <Label Content="Account Database | PRO" HorizontalAlignment="Left" Margin="58,4,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontSize="24" MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
+            <Label Content="Account Database | PRO" HorizontalAlignment="Left" Margin="52,3,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontSize="24" MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
+            <Label Content="FCODE_Company © 2022" HorizontalAlignment="Left" Margin="250,505,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight Condensed" Foreground="#FF6D6D6D"/>
+            <Button x:Name="_b_openBase" Content="Открыть базу данных" HorizontalAlignment="Left" Height="45" Margin="10,60,0,0" VerticalAlignment="Top" Width="230" FontFamily="Bahnschrift SemiLight Condensed" FontSize="20"/>
+            <Button x:Name="_b_addAcc" Content="Добавить новый аккаунт" HorizontalAlignment="Left" Height="45" Margin="10,110,0,0" VerticalAlignment="Top" Width="230" FontFamily="Bahnschrift SemiLight Condensed" FontSize="20"/>
+            <Button x:Name="_b_editAcc" Content="Редактировать запись" HorizontalAlignment="Left" Height="45" Margin="10,160,0,0" VerticalAlignment="Top" Width="230" FontFamily="Bahnschrift SemiLight Condensed" FontSize="20"/>
+            <Button x:Name="_b_about" Content="О программе" HorizontalAlignment="Left" Height="45" Margin="10,455,0,0" VerticalAlignment="Top" Width="230" FontFamily="Bahnschrift SemiLight Condensed" FontSize="20" Click="_b_about_Click"/>
+
+
+            <Grid HorizontalAlignment="Left" Height="451" Margin="255,49,0,0" VerticalAlignment="Top" Width="756" Background="#FFB7B7B7">
+                <Button Content="Следующий аккаунт" HorizontalAlignment="Left" Height="26" Margin="303,53,0,0" VerticalAlignment="Top" Width="105" FontFamily="Bahnschrift SemiLight Condensed"/>
+                <ComboBox HorizontalAlignment="Left" Margin="194,12,0,0" VerticalAlignment="Top" Width="323" FontFamily="Bahnschrift SemiLight SemiCondensed" FontSize="20"/>
+                <Label Content="Выбранный аккаунт :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight SemiCondensed" FontSize="20" Foreground="White"/>
+                <Label Content="Количество аккаунтов :" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight SemiCondensed" FontSize="20" Foreground="White"/>
+                <Label x:Name="_l_accCounter" Content="NULL" HorizontalAlignment="Left" Margin="211,49,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight SemiCondensed" FontSize="20" Foreground="White"/>
+            </Grid>
 
         </Grid>
+
     </Border>
 </Window>

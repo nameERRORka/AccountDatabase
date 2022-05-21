@@ -41,5 +41,11 @@ namespace AccountDatabasePro
         {
             this.DragMove();
         }
+
+        private void _b_about_Click(object sender, RoutedEventArgs e)
+        {
+            _w_about _w_abo = new _w_about();
+            _w_abo.Show();
+        }
     }
 }

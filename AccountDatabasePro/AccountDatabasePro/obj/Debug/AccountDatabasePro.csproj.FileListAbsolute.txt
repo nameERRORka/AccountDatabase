@@ -16,3 +16,5 @@ E:\FCODE\AccountDatabasePro\AccountDatabasePro\AccountDatabase\AccountDatabasePr
 E:\FCODE\AccountDatabasePro\AccountDatabasePro\AccountDatabase\AccountDatabasePro\AccountDatabasePro\obj\Debug\AccountDatabasePro.pdb
 E:\FCODE\AccountDatabasePro\AccountDatabasePro\AccountDatabase\AccountDatabasePro\AccountDatabasePro\obj\Debug\ExitWindow.g.cs
 E:\FCODE\AccountDatabasePro\AccountDatabasePro\AccountDatabase\AccountDatabasePro\AccountDatabasePro\obj\Debug\ExitWindow.baml
+E:\FCODE\AccountDatabasePro\AccountDatabasePro\AccountDatabase\AccountDatabasePro\AccountDatabasePro\obj\Debug\_w_about.g.cs
+E:\FCODE\AccountDatabasePro\AccountDatabasePro\AccountDatabase\AccountDatabasePro\AccountDatabasePro\obj\Debug\_w_about.baml
